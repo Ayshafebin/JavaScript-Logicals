@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //111111111111--------------------------------------------
+
+        // const vote = {
+        //     upvotes : 2,
+        //     downvotes : 33
+        // };
+        // console.log(vote.upvotes-vote.downvotes);
+
+        //222222222222-----------------------------------------
+
+        // const obj = { nochange : true };
+
+        // Object.freeze(obj);
+
+        // obj.nochange = false;
+        // obj.signature = "whatever";
+
+        // console.log(obj);
+
+        //33333333333333----------------------------------------------
+
+        function volume(size){
+            const { width, heigth, length} = size;
+            return width*heigth*length;
+        }
+        console.log(volume({ width: 2, heigth: 5, length: 1 }));
+
+        //44444444444-----------------------------------------
+
+        function total(ati){
+            return { "Needs" : ati*50/100,
+        "Wants" : ati*30/100,
+        "Savings" : ati*20/100}
+        }
+        console.log(total(10000));
+
+        //55555555555------------------------------------------
+
+        function relationtoluke(name){
+            let relation;
+
+            switch (name){
+                case "Darth Vander":
+                    relation = "father";
+                    break;
+                case "Leia":
+                    relation = "sister";
+                    break; 
+                case "Han":
+                    relation = "brother in law";
+                    break;
+                default:
+                    "Sorry";
+            }
+            return `Luke, I am your ${relation}`;
+        }
+        console.log(relationtoluke("Darth Vander"));
+
+        //66666666666666666---------------------------------------
+
+        function cityfacts(city){
+            const { name, population, contient } = city;
+            return `${name} has a population of ${population} and is situated in ${contient}`
+        }
+        console.log(cityfacts({
+            name : "paris",
+            population : "2,140,526",
+            contient : "Europe"
+        }));
+
+        //77777777777--------------------------------------
+
+        const arr = [1,2,3,4,5,6,7,8];
+         [fst,scnd,thrd,...othr] = arr;
+         console.log(othr);
+     
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

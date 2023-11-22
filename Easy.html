@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 111111111111111------------------------------------------
+
+
+        // function minmax(arr){
+        //     return [Math.min(...arr), Math.max(...arr)];
+        // }
+        // console.log(minmax([1,2,4,5,8]));
+
+         let minmax = (arr) => [Math.min(...arr), Math.max(...arr)];
+         console.log(minmax([3,5,7,9,4]));
+
+         //222222222222222222------------------------------------
+
+         function cannest(arr1, arr2){
+           // return [Math.min(...arr1) > Math.min(...arr2) && Math.max(...arr1) < Math.max(...arr2)]
+            
+
+             return ([Math.min(...arr1) > Math.min(...arr2) && Math.max(...arr1) < Math.max(...arr2)]) ? "true" : "false";
+
+         }
+         console.log(cannest([1,2,3,4], [0,6]));
+
+         // 33333333333333333333------------------------------------
+
+        //  const srt = [1,5,6,3];
+        //  function series(arr,arr2){
+        //     return arr + arr2;
+        //  }  
+        //     let rslt = srt.reduce(series);
+            
+         
+        //  console.log(rslt + " " +  "ohms");
+
+        const arr = [1,5,6,3];
+        function series(num1, num2) {
+            return num1 + num2;
+        }
+        let rslt = arr.reduce(series);
+        console.log(rslt + " " + "ohms"); 
+
+        //444444444444444--------------------------------------------
+
+        function tuckin(arr1, arr2){
+            return [arr1[0], ...arr2, arr1[1]]
+        }
+        console.log(tuckin([1,10],[2,3,4,5,6,7,8,9]));
+
+        //55555555555--------------------------------------
+
+        function split(num){
+            return [Math.floor(num/2), Math.ceil(num/2)];
+        }
+        console.log(split(4));
+
+        //66666666666----------------------------------------
+
+        function fltrarry(arr){
+            return arr.filter(z => typeof z === 'number');
+        }
+        console.log(fltrarry([1,'a',2,'b',3]));                 
+
+        //7777777777777------------------------------------
+        
+        function srtbylnth(arr){
+            return arr.sort();
+        }
+        console.log(srtbylnth(["a", "ccc", "dddd", "bb"]));
+
+        //8888888888888----------------------------------
+
+        function smofcbs(arr){
+            return arr.reduce((x, y) => x + Math.pow(y, 3), 0);
+        }
+        console.log(smofcbs([3, 4, 5]));
+
+        //99999999999999-----------------------------------
+
+        function getOnlyEvens(arr) {
+  return arr.filter((num, index) => num % 2 === 0 && index % 2 === 0);
+}
+        console.log(getOnlyEvens([1, 2, 3, 4, 5]));
+        console.log(getOnlyEvens([0, 1, 2, 3, 4]));
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

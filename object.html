@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* var person = {
+            name : 'Aysha',
+            age : 22,
+            gender : 'female'
+        };
+        person.name = 'febi'
+        console.log('My name is ' + person.name);
+        // console.log(person); */
+
+        // for in---------------------------------------
+
+         var person = {
+        name : "Aysha",
+        age : 22,
+        place : "Vengara"
+        }
+
+        let txt = '';
+        for(let x in person){
+            txt += person[x] + "\n";
+        }
+        console.log(txt); 
+
+        /* var animal = { 
+            name : "Elephent",
+            color : "Gray",
+            legs : 4
+        }
+
+        let rslt = '';
+
+        for(let x in animal){
+            rslt += animal[x] + "\n";
+        }
+        console.log(rslt); */ 
+
+        /* var person = { 
+            name : "Febin",
+            age : 22,
+            gender : "Female"
+        }
+        
+        let store = '';
+        for(let x in person){
+            store += person[x] + "\n";
+            
+        }
+        
+        console.log(store); */ 
+
+        // this keyword----------------------
+
+        // var person = { 
+        //     name : "Aysha",
+        //     age : 22,
+        //     place : "Vengara",
+        //     display : function (){
+        //         return this.name + /* "\n" */ ' '+  this.place;
+        //     }
+        // }
+        //        // person.gender = "Female";
+        //        // console.log(person);
+        // console.log(person.display()); 
+
+        // object constructer--new key word------------------------------------------
+
+         function person(name, age, place){
+            this.name = name
+            this.age = age
+            this.place = place
+        //     this.display = function (){
+        //         return "Name: " + this.name +"\n"+ "Age: " + this.age +"\n" + "Place: " + this.place + "\n"
+        //     }
+        }
+        const person1 = new person("Abhi", 20, "Vengara");
+        const person2 = new person("Appus", 3, "Calicut");
+
+        console.log(person1.display());
+        console.log(person2.display()); 
+
+        // object Method---------------------------------------------------------
+
+       /* var person = { 
+            name : "Aysha",
+            place : "ACM",
+            display : function(){
+                return "My name is " + this.name;
+            }
+        }
+        console.log(person.display());  */ 
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

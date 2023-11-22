@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function calculator(num1, operator, num2){
+            switch (operator){
+                case "+":
+                    return num1 + um2;
+                break;
+                case "*":
+                    return num1 * num2;
+                    break;
+                case "/":
+                    return num1 / num2;
+                    break;
+                    default:
+                        return "Invalid";
+                        break;    
+            }
+        }
+        console.log(calculator(2, "-", 2));
+
+        //===================================================
+
+        function lrg(arr){
+            return arr.map((rslt) => Math.max(...rslt));
+        }
+        console.log(lrg([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]));
+
+        //====================================================
+
+        function extct(obj){
+            let sum = 0;
+            // return Object.values(obj).reduce((key, vlu) => {
+            //     return typeof vlu === "number" ? key + vlu : key;
+            // })
+
+            for(let key in obj){
+                sum += obj[key];
+            }
+            return sum;
+        }
+        console.log(extct({ first: 1, second: 6, third: 5}));
+        console.log(extct({ first: 1, second: -6, third: 10 }));
+
+        //=================================================
+
+        // function countTrue(count){
+        //     return count.filter(Boolean).length;
+        // }
+        // console.log(countTrue([true, false, false, true, false]));
+
+        //=================================================
+
+        function truvl(arr){
+            let count = 0;
+            for(let i=0; i<arr.length; i++){
+                if(arr[i] === true){
+                    count++;
+                }
+            }
+            return count;
+        }
+        console.log(truvl([true, false, false, true, false]));
+
+        //====================================================
+
+        function srt(arr){
+            return arr.sort();
+        }
+        console.log(srt(["a", "ccc", "dddd", "bb"]));
+
+        //==================================================
+
+        let word = "my name is khan";
+        let stor = word.split(" ");
+        stor = stor[0].toLowerCase() + stor[1][0].toUpperCase() + stor[1].slice(1).toLowerCase()+stor[2][0].toUpperCase() + stor[2][1].toLowerCase() + stor[3][0].toUpperCase() + stor[3].slice(1).toLowerCase();
+        console.log(stor);
+
+    </script>
+</body>
+</html>
